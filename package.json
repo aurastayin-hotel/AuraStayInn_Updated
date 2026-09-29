@@ -1,0 +1,43 @@
+{
+  "name": "hotel-aura-stay-inn",
+  "version": "1.0.0",
+  "description": "Hotel AURA Stay Inn Desktop Application",
+  "main": "main.js",
+  "author": "Hotel AURA Stay Inn",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.aura.stayinn",
+    "productName": "Hotel AURA Stay Inn",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!dist/**/*"
+    ],
+    "win": {
+      "icon": "Hotel AURA Stay Inn.ico",
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Hotel AURA Stay Inn"
+    }
+  },
+  "engines": {
+    "node": "24.16.0"
+  },
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest"
+  }
+}
