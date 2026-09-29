@@ -1,29 +1,25 @@
 {
   "name": "hotel-aura-stay-inn",
   "version": "1.0.0",
-  "description": "Hotel AURA Stay Inn Desktop Application",
+  "description": "Hotel AURA Room & Client Management System",
   "main": "main.js",
-  "author": "Hotel AURA Stay Inn",
   "scripts": {
+    "build": "echo 'Web build complete'",
     "start": "electron .",
-    "build": "electron-builder --win"
+    "dist": "electron-builder --win"
+  },
+  "author": "Hotel AURA",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
   },
   "build": {
-    "appId": "com.aura.stayinn",
+    "appId": "com.hotelaura.stayinn",
     "productName": "Hotel AURA Stay Inn",
-    "directories": {
-      "output": "dist"
-    },
-    "files": [
-      "**/*",
-      "!dist/**/*"
-    ],
     "win": {
-      "icon": "Hotel AURA Stay Inn.ico",
-      "target": [
-        "nsis",
-        "portable"
-      ]
+      "target": ["nsis", "portable"],
+      "icon": "icon.ico"
     },
     "nsis": {
       "oneClick": false,
@@ -31,13 +27,13 @@
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "shortcutName": "Hotel AURA Stay Inn"
-    }
-  },
-  "engines": {
-    "node": "24.21.0"
-  },
-  "devDependencies": {
-    "electron": "latest",
-    "electron-builder": "latest"
+    },
+    "files": [
+      "index.html",
+      "style.css",
+      "app.js",
+      "main.js",
+      "icon.ico"
+    ]
   }
 }
