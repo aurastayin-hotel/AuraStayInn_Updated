@@ -2,12 +2,12 @@ const CONFIG = {
   demoEmail: "abc@gmail.com",
   demoPassword: "Ab@12",
   rooms: 9,
-  saveWebhookUrl: "https://script.google.com/macros/s/AKfycbxPNNQak0ygKkMJBsdtT5QUi_TVnVR2W7NQvaukg-SrXlh01bvB250DV1cC-cHjSAsR/exec",
+  saveWebhookUrl: "https://script.google.com/macros/s/AKfycbyDoyg7zNb6bZh5a2RD_x3OmBzFrI_dVMedgd1WWP45V3BtF5vxw9JKcdPeh9Hs2tXvtg/exec",
   resetWebhookUrl: "",
   admins: {
     "Praful@gmail.com": "Praful@12345",
-    "Rakesh@gmail.com": "Rakesh@12345",
-    "Akshay@gmail.com": "Akshay@12345"
+    "rakesh@gmail.com": "Rakesh@12345",
+    "akshayy@gmail.com": "Akshayy@12345"
   },
   roomList: [
     { number: "101", name: "Room 101", type: "AC" },
